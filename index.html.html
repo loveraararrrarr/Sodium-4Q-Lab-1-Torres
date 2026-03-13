@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AA1</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="lovern">
+    </head>
+
+    <body>
+
+        <form name="info" action="checkout.html" onsubmit="return validateForm()">
+
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required>
+
+            <br><br>
+
+            <label for="item"> Available Items: </label>
+
+            <br><br>
+            <div>
+                <input type="checkbox" value="anak" name="item" id="item_anak" required>
+                <label for="item_anak">anak (Php 100 each)</label>
+                <br>
+                
+                <label for="amountAnak">how many? </label>
+                <input type="number" name="amountAnak" id="amountAnak" required>
+
+                <br><br>
+
+                <input type="checkbox" value="asawa" name="item" id="item_asawa" required>
+                <label for="item_asawa">asawa (Php 10 each) </label>
+                
+                <br>
+
+                <label for="amountAsawa">how many? </label>
+                <input type="number" name="amountAsawa" id="amountAsawa" required>
+            </div>
+
+            <br><br>
+
+            <label for="payment">payment</label>
+            <input type="number" name="payment" id="payment" required>
+
+            <br> <br> <br>
+
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
